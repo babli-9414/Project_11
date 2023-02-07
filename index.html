@@ -6,235 +6,292 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="css/main.css" />
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    
   </head>
   <body>
+    <input type="checkbox" id="navcheck" />
+    <div class="nav-btn">
+      <label htmlfor="navcheck">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+    </div>
+    <header>
       <nav>
-        <input type="checkbox" id="check">
-        <label for="check" class="checkbtn">
-          <i class="fas fa-bars"></i>
-        </label>
-        <label class="logo">Promage</label>
-        <ul>
-          <li><a class="active" href="#">Products</a></li>
+        <div class="logo"><img src="images\logo.svg" alt="" /></div>
+        <ul class="nav-links">
+          <li><a href="#">Products</a></li>
           <li><a href="#">Pricing</a></li>
           <li><a href="#">Developers</a></li>
           <li><a href="#">Company</a></li>
+        </ul>
+        <ul class="buttons">
           <li>
-            <a class="btn btn-primary" href="#">
-            Sign Up
-            </a>
+            <button class="signup-button btn-active" href="#">Sign Up</button>
           </li>
-          <li>
-            <a class="btn btn-secondary" href="#">
-            Login
-            </a>
-          </li>
+          <li><button class="login-button" href="#">Login</button></li>
         </ul>
       </nav>
-    <section>
-      <div class="hero">
-        <div class="hero-text">
-          <h1>
+    </header>
+    <div class="backdrop"></div>
+    <section class="hero hero1">
+      <div class="row-50">
+        <div class="col-50">
+          <h1 class="hero-head">
             One App to Manage<br />Your Tasks, Projects<br />and Business.
           </h1>
-          <p>
+          <p class="hero-p">
             Manage all your tasks and projects and get real time insight on
             performance and time management in a single app. Enjoy maximum
             productivity with Promage.
           </p>
-          <div class="">
-            <a class="btn-primary"> Get started for free </a>
+          <div class="btn">
+            <a class="signup-button btn1"> Get started for free </a>
           </div>
         </div>
-        <div class="">
-          <img src="Rectangle 55.svg" alt="Dashboard" />
+        <div class="col-50">
+          <img class="hero-img" src="images\Rectangle 55.svg" alt="Dashboard" />
         </div>
       </div>
     </section>
-    <section>
-      <div class="">
-        <div class="">
-          <img src="Dashboard 1.svg" alt="Dashboard" />
+    <section class="logos">
+      <div class="frames-cont">
+        <div class="content">
+          BE AMONG THE 1% MOST PRODUCTIVE TEAMS IN THE WORLD
         </div>
-        <div class="hero-text">
-          <h1>Get Work Done,<br />Simpler & Faster</h1>
-          <p>
+        <div class="frames">
+          <span><img class="logo-img" src="images\Frame1.svg" alt="" /></span>
+          <span><img class="logo-img" src="images\Frame2.svg" alt="" /></span>
+          <span><img class="logo-img" src="images\Frame3.svg" alt="" /></span>
+          <span><img class="logo-img" src="images\Frame4.svg" alt="" /></span>
+        </div>
+      </div>
+    </section>
+    <section class="hero hero2">
+      <div class="row-50">
+        <div class="col-50">
+          <img
+            class="hero-img2"
+            src="images\img22.png"
+            alt="Dashboard"
+          />
+        </div>
+        <div class="col-50">
+          <h5 class="b-head">MAXIMISE PRODUCTIVITY</h5>
+          <h1 class="hero-head2">Get Work Done,<br />Simpler & Faster</h1>
+          <p class="hero-p2">
             With project management that adapts to the demands of your team, you
             can schedule, monitor and over see any kind of work.
           </p>
           <div class="btn">
-            <a class="btn btn-primary"> Get started </a>
+            <button class="signup-button herobtn" href="#">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="hero tools">
+      <div class="row-50">
+        <div class="col-50">
+          <h5 class="b-head">THE PLATFORM'S PLATFORM</h5>
+          <h1 class="hero-head2">
+            Bring All Of Your Tools<br />Into One Place
+          </h1>
+          <p class="hero-p2 tool-p">
+            Promage can integrate with your existing tools via native and
+            third-party integrations if you've notready to replace all of them
+            just yet. To keep everything in one place, sync your team's
+            calendars, chat service, clous storage, and more.
+          </p>
+          <div class="import">
+            <span class="circle circle1">1</span>
+            <span class="text text1">IMPORT</span>
+            <span class="circle">3</span>
+            <span class="text">DOWNLOADS</span>
+          </div>
+          <div class="click">
+            <span class="circle">2</span>
+            <span class="text">CLICKAPPS</span>
+            <span class="circle">4</span>
+            <span class="text">CLICKAPPS</span>
+          </div>
+          <div class="btn">
+            <button class="login-button casebtn" href="#">
+              Learn More -->
+            </button>
+          </div>
+        </div>
+        <div class="col-50 logos-plat">
+          <div class="img5">
+            <div class="img55"><img src="images\slackk.svg" alt="" /></div>
+            <div class="img55"><img src="images\slackk.svg" alt="" /></div>
+          </div>
+          <div class="img5">
+            <div class="img55"><img src="images\zoho.svg" alt="" /></div>
+          </div>
+          <div class="img5">
+            <div class="img55"><img src="images\figma.svg" alt="" /></div>
+            <div class="img55"><img src="images\tt.svg" alt="" /></div>
+          </div>
+          <div class="img5">
+            <div class="img55"><img src="images\calendar.svg" alt="" /></div>
+          </div>
+          <div class="img5">
+            <div class="img55"><img src="images\dropbox.svg" alt="" /></div>
+            <div class="img55"><img src="images\drive.svg" alt="" /></div>
           </div>
         </div>
       </div>
     </section>
     <section class="cases">
-      <div>
-        <div class="">
-          <h1>Use Cases</h1>
-        </div>
-        <div class="card">
-          <div class="">
-            <div class="icon">
-              <img src="Vector.svg" alt="vector" />
+      <div class="cases-sec">
+        <h1 class="hero-head2 case-head">Use Cases</h1>
+        <div class="row-50 case">
+          <div class="col-50">
+            <div class="card">
+              <div class="icon icon1">
+                <img class="imgc" src="images/Vector.svg" alt="vector" />
+              </div>
+              <div class="description">
+                <h3>Performance and goal tracking</h3>
+                <p class="case-p">
+                  Track employee performance with real-time reporting that
+                  enables you to visualize tasks completed, target progress
+                  towards goals, and much more.
+                </p>
+              </div>
             </div>
-            <div class="description">
-              <h3>Employee Onboarding</h3>
-              <p>
-                Build a scalable onboarding program with individualized tasks
-                and all employee/staff requirements needed to bring the team up
-                to speed.
-              </p>
-            </div>
-            <a href="#" class="box"></a>
           </div>
-          <div class="">
-            <div class="icon">
-              <img src="Vector.svg" alt="vector" />
-            </div>
-            <div class="description">
-              <h3>Performance and goal tracking</h3>
-              <p>
-                Track employee performance with real-time reporting that enables
-                you to visualize tasks completed, target progress towards goals,
-                and much more.
-              </p>
-            </div>
-            <a href="#" class="box"></a>
-          </div>
-          <div class="">
-            <div class="icon">
-              <img src="Vector.svg" alt="vector" />
-            </div>
-            <div class="description">
-              <h3>Performance and goal tracking</h3>
-              <p>
-                Track employee performance with real-time reporting that enables
-                you to visualize tasks completed, target progress towards goals,
-                and much more.
-              </p>
-            </div>
-            <a href="#" class="box"></a>
-          </div>
-          <div class="">
-            <div class="icon">
-              <img src="Vector.svg" alt="vector" />
-            </div>
-            <div class="description">
-              <h3>Employee Onboarding</h3>
-              <p>
-                Build a scalable onboarding program with individualized tasks
-                and all employee/staff requirements needed to bring the team up
-                to speed.
-              </p>
-            </div>
-            <a href="#" class="box"></a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="">
-      <div class="">
-        <div class="">
-          <div class="text">
-            <div class="header">
-              <h1>See everthing the team is working on in one place.</h1>
-              <div class="btn">
-                <a href="#" class="btn btn-primary">
-                  Get started now;
-                </a>
+          <div class="col-50">
+            <div class="card">
+              <div class="icon icon2">
+                <img class="imgc" src="images/Vector2.svg" alt="vector" />
+              </div>
+              <div class="description">
+                <h3>Employee Onboarding</h3>
+                <p class="case-p">
+                  Build a scalable onboarding program with individualized tasks
+                  and all employee/staff requirements needed to bring the team
+                  up to speed.
+                </p>
               </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="footer-top">
-      <div class="footer-t">
-        <div class="footer-logo">
-          <div>
-            <div class="promage">Promage</div>
-            <p>
-              Your No 1 project management tool for better workflow and improved
-              efficiency.
-            </p>
-            <div class="rating">
-              <h4>Contact</h4>
-              <p>hello@promage.com</p>
+        <div class="row-50 case">
+          <div class="col-50">
+            <div class="card">
+              <div class="icon icon3">
+                <img class="imgc" src="images/Vector3.svg" alt="vector" />
+              </div>
+              <div class="description">
+                <h3>Employee Onboarding</h3>
+                <p class="case-p">
+                  Build a scalable onboarding program with individualized tasks
+                  and all employee/staff requirements needed to bring the team
+                  up to speed.
+                </p>
+              </div>
             </div>
           </div>
-        </div>
-        <div class="footer-links">
-          <div>
-            <h4>Company</h4>
-            <ul>
-              <li>
-                <a href="">About</a>
-              </li>
-              <li>
-                <a href="">Team</a>
-              </li>
-              <li>
-                <a href="">FAQs</a>
-              </li>
-              <li>
-                <a href="">Blogs</a>
-              </li>
-              <li>
-                <a href="">Carrier</a>
-              </li>
-            </ul>
+          <div class="col-50">
+            <div class="card">
+              <div class="icon icon4">
+                <img class="imgc" src="images/Vector 4.svg" alt="vector" />
+              </div>
+              <div class="description">
+                <h3>Performance and goal tracking</h3>
+                <p class="case-p">
+                  Track employee performance with real-time reporting that
+                  enables you to visualize tasks completed, target progress
+                  towards goals, and much more.
+                </p>
+              </div>
+            </div>
           </div>
-          <div>
-            <h4>Products</h4>
-            <ul>
-              <li>
-                <a href="">Tasks</a>
-              </li>
-              <li>
-                <a href="">Docs</a>
-              </li>
-              <li>
-                <a href="">Goals</a>
-              </li>
-              <li>
-                <a href="">Chat</a>
-              </li>
-              <li>
-                <a href="">Whiteboard</a>
-              </li>
-              <li>
-                <a href="">Dashboard</a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4>Resources</h4>
-            <ul>
-              <li>
-                <a href="">Quick Start</a>
-              </li>
-              <li>
-                <a href="">Libraries</a>
-              </li>
-              <li>
-                <a href="">API Documentation</a>
-              </li>
-            </ul>
+          <div class="casebtn">
+            <button class="login-button casebtn" href="#">
+              Learn More -->
+            </button>
           </div>
         </div>
       </div>
     </section>
-    <section class="footer-bottom">
-      <div class="footer-b">
-        <div class="copyright">
-          <p id="auto-copyright">
-            2023 @Promage. All rights reserved. --Privacy Policy - Terms of
-            Services
+      <section id="slider">
+        <div class="slide">
+        <h1 class="heading">What our clients have to say...</h1>
+        <div class="boxes">
+        <div><img class="slide-img" src="images\slide-img.svg" alt=""></div>
+        <div class="desc"><p class="text-para">We wouldn’t have such great connection with different departments if it weren’t for Promage. Thanks to Promage I can easily interact with engineers directly and build working relationships, and that has been extremely valuable.</p>
+        <p class="name">Kyler Rose // Marketing Services Manager, Saturn
+        </p></div>
+      </div>
+      </div>
+      </section>
+    <section class="blue">
+      <div class="bluebox">
+        <div class="text">
+          <h1 class="blue-head">
+            See everthing the team is working on in one place.
+          </h1>
+        </div>
+        <div class="btn blueb">
+          <a href="#" class="signup-button bluebtn casebtn">
+            Get Started now
+          </a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="row">
+        <div class="col">
+          <div class="logob"><img src="images\logo.svg" alt="" /></div>
+          <p>
+            Your No 1 project management tool for better workflow and improved
+            efficiency.
           </p>
+          <div class="contact">
+            <h4>Contact</h4>
+            <a href="#">hello@promage.com</a>
+          </div>
+        </div>
+        <div class="col">
+          <h4>Company</h4>
+          <ul class="box">
+            <li><a href="#">About</a></li>
+            <li><a href="#">Team</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">Blogs</a></li>
+            <li><a href="#">Career</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Product</h4>
+          <ul class="box">
+            <li><a href="#">Tasks</a></li>
+            <li><a href="#">Docs</a></li>
+            <li><a href="#">Goals</a></li>
+            <li><a href="#">Chat</a></li>
+            <li><a href="#">Whiteboard</a></li>
+            <li><a href="#">Dashboard</a></li>
+          </ul>
+        </div>
+        <div class="col">
+          <h4>Resources</h4>
+          <ul class="box">
+            <li><a href="#">Quick Start</a></li>
+            <li><a href="#">Libraries</a></li>
+            <li><a href="#">API Documentation</a></li>
+          </ul>
         </div>
       </div>
-    </section>
+      <hr />
+      <div class="footer-bottom">
+        <p>
+          2023 @Promage. All rights reserved. --Privacy Policy - Terms of
+          Services
+        </p>
+      </div>
+    </footer>
   </body>
 </html>

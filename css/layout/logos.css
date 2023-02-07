@@ -1,0 +1,46 @@
+.logos{
+    width: 100%;
+    margin: auto;
+}
+
+.content{
+max-width: 830px;
+margin: auto;
+font-weight: 600;
+font-size: 24px;
+line-height: 150%;
+color: #536E96;
+margin-top: 116px;
+left: 61px;
+
+}
+.frames{
+    max-width: 1020px;
+    margin: auto;
+    top: 44px;
+}
+.logo-img{
+    width: 250px;
+    height: 90.02px;
+}  
+@media(max-width:1028px) {
+    .logos{
+        margin-top: 70px;
+    }
+
+    .content{
+        max-width: 80%;
+        margin: auto;
+        font-weight: 500;
+        font-size: 22px;
+        line-height: 120%;
+} 
+.frames{
+    max-width: 100%;
+    margin: auto;
+}
+.logo-img{
+    width: 23%;
+    height: 70.02px;
+}  
+}

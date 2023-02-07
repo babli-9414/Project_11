@@ -1,0 +1,174 @@
+header{
+  width: 100%;
+  background: linear-gradient(90deg, #F9FBFF 0%, #E9F2FF 100%);
+  position: fixed;
+  z-index: 100;
+}
+nav{
+  min-height: 100px;
+  max-width: 70%;
+  margin: auto;
+  margin-top: 20px;
+  display: flex;
+  z-index: 10;
+}
+
+/*Styling logo*/
+.logo{
+  margin-top: 20px;
+}
+
+/*Styling Links*/
+.nav-links{
+  display: flex;
+  width: 40vw;
+  padding: 0 20px;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.buttons{
+  display: flex;
+  width: 20vw;
+ justify-content: space-around;
+  align-items: center;
+}
+.nav-links li a{
+  font-size: 18px;
+  font-weight: 500;
+  margin: 0 30px;
+color: #062d64;
+}
+.nav-links li {
+  position: relative;
+}
+.nav-links li a::before {
+  content: "";
+  display: block;
+  height: 3px;
+  width: 0%;
+  background-color: #61DAFB;
+  position: absolute;
+  transition: all ease-in-out 250ms;
+}
+
+
+/*Styling Buttons*/
+.signup-button{
+  background-color: #0252C5;
+  border: 1px solid #0252C5;
+  border-radius: 12px;
+  padding: 12px 36px;
+  font-size: 20px;
+  cursor: pointer;
+ color: white;
+}
+.signup-button:hover {
+  background-color: #186be0;
+  border:1px solid #186be0;
+  transition: all ease-in-out 350ms;
+}
+.login-button{
+  color: #0252C5;
+  background-color: white;
+  border: 2px solid #0252C5;
+  border-radius: 12px;
+  padding: 10px 36px;
+  font-size: 20px;
+  cursor: pointer;
+}
+.login-button:hover {
+  color: #2c75db;
+  border:2px solid #186be0;
+  transition: all ease-in-out 350ms;
+}
+
+/* Hamburger menu */
+#navcheck,
+.nav-btn,
+.backdrop {
+    display: none;
+}
+.nav-btn {
+    position: fixed;
+    right: 24px;
+    top: 26px;
+    z-index: 99;
+}
+.nav-btn label span {
+    display: block;
+    width: 30px;
+    height: 1.5px;
+    background: #1e1d1d;
+    border-radius: 3px;
+    transition: background-color 0.3s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.3s ease-in-out,
+        -webkit-transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1);
+    -webkit-transition: background-color 0.3s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.3s ease-in-out,
+        -webkit-transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1);
+    transition: transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1), background-color 0.3s cubic-bezier(0.77, 0.2, 0.05, 1),
+        opacity 0.3s ease-in-out;
+    transition: transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1), background-color 0.3s cubic-bezier(0.77, 0.2, 0.05, 1),
+        opacity 0.3s ease-in-out, -webkit-transform 0.3s cubic-bezier(0.77, 0.2, 0.05, 1);
+    position: relative;
+}
+.nav-btn label span:not(:last-child) {
+    margin-bottom: 7px;
+}
+
+/* media query */
+@media (max-width: 968px) {
+  .nav-links, .buttons {
+      display: none !important;
+  }
+  .nav-btn {
+      display: block;
+  }
+  .nav-links li a {
+      color: #150202;
+      width: 100%;
+      display: block;
+      padding: 16px;
+  }
+  #navcheck {
+      opacity: 0;
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 72px;
+      height: 72px;
+      z-index: 999;
+      cursor: pointer;
+      margin: 0;
+      display: block;
+  }
+  input#navcheck:checked ~ .nav-btn label span:first-child {
+      -webkit-transform: rotate(45deg) translate(6px, 6px);
+      transform: rotate(45deg) translate(6px, 6px);
+      top: 0;
+      left: 0;
+  }
+  input#navcheck:checked ~ .nav-btn label span:last-child {
+      -webkit-transform: rotate(-45deg) translate(6px, -6px);
+      transform: rotate(-45deg) translate(6px, -6px);
+      top: 0;
+      left: 0;
+  }
+  input#navcheck:checked ~ .nav-btn label span:nth-child(2) {
+      opacity: 0;
+  }
+  input#navcheck:checked ~ .header .navbar .nav-menu {
+      display: block !important;
+      position: absolute;
+      top: 72px;
+      left: 0;
+      right: 0;
+      background-color: #fff;
+  }
+  input#navcheck:checked ~ .backdrop {
+      position: absolute;
+      display: block;
+      background-color: rgba(0, 0, 0, 0.36);
+      width: 100%;
+      height: calc(100% - 72px);
+      z-index: 1;
+  }
+}

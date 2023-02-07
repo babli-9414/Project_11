@@ -4,7 +4,9 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
+    color:#424242
 }
 body{
-    font-family: 'Roboto';
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
 }

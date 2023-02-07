@@ -1,0 +1,53 @@
+.blue{
+    width: 100%;
+    margin: auto;
+    margin-bottom: 200px;
+}
+.bluebox{
+    max-width: 70%;
+    margin: auto;
+    box-shadow: 0px 4px 16px rgba(147, 147, 147, 0.08);
+    border-radius: 24px;  
+    min-height: 400px;
+    background: linear-gradient(90.29deg, #011936 15.7%, #012F63 91.16%);
+    text-align: center;
+    padding-top: 100px;
+    box-sizing: border-box;
+}
+.blueb{
+    margin-top: 48px;
+}
+.bluebtn{
+    font-weight: 700;
+font-size: 24px;
+line-height: 29px;
+}
+.blue-head{
+    width: 902px;
+    margin: auto;
+    color: white ;
+    font-weight: 700px !important;
+font-size: 48px !important;
+line-height: 124% !important;
+}
+@media screen and (max-width:1182px){
+    .blue{
+        margin-bottom: 100px;
+    }
+    .bluebox{
+        width: 100%;
+        padding: auto;
+    }
+    .blueb{
+        margin-top: 36px;
+    }
+    .blue-head{
+        width: 100%;
+        font-weight: 600px !important;
+font-size: 36px !important;
+    }
+    .bluebtn{
+        font-weight: 500;
+    font-size: 20px;
+    }
+}

@@ -1,0 +1,71 @@
+.cases{
+    width: 100%;
+    margin: auto;
+    line-height: 40px;
+    background: linear-gradient(90deg, #FDFDFF 14.06%, #FCFDFE 100%);
+    min-height: 1215px;
+    margin-bottom: 200px;
+    padding-top: 100px;
+}
+.case-head{
+    max-width: 70%;
+    margin: auto;
+}
+.card{
+ background: #FFFFFF;
+box-shadow: 0px 0px 48px rgba(147, 147, 147, 0.04), 0px 4px 54px rgba(230, 236, 255, 0.24);
+border-radius: 20px;
+padding: 48px 40px 39px;
+}
+.case{
+    margin-top: -80px;
+}
+.case-p{
+    margin-top: 14px;
+    font-weight: 400;
+font-size: 20px;
+line-height: 160%;
+width: 494px;
+}
+.casebtn{
+    margin-top:50px;
+    padding: 16px 32px;
+    width: 256px;
+height: 64px;
+}
+.icon{
+position: relative;
+width: 80px;
+height: 80px;
+border-radius: 26px;
+margin-bottom: 24px;
+}
+.icon1{
+    background: rgba(255, 111, 0, 0.08);
+}
+.icon2{
+    background: rgba(0, 186, 139, 0.08); 
+}
+.icon3{
+    background: rgba(238, 179, 0, 0.08);
+}
+.icon4{
+    background: rgba(174, 143, 247, 0.1);
+}
+.imgc{
+    position: absolute;
+    left: 17.96%;
+    right: 18%;
+    top: 22.79%;
+    bottom: 22.79%;
+}
+@media (max-width:768px) {
+    .case-p{
+        width:100%
+    }
+    .col-50{
+        align-items: center;
+        justify-content: center;
+        flex-basis: 100%;
+    }
+}

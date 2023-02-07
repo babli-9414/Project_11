@@ -1,11 +1,15 @@
 h1{
-    font-size: 4.4rem;
+    font-size: 60px;
+    line-height: 80px;
+    font-weight: 800;
 }
 h2{
-    font-size: 2.2rem;
+    font-size: 36px;
 }
 h3{
-    font-size: 1.8rem;
+    font-weight: 600;
+font-size: 28px;
+line-height: 160%;
 }
 h4{
     font-size: 1.2rem;
@@ -14,6 +18,8 @@ h5{
     font-size: 1rem;
 }
 p{
-    font-size: 1.3rem;
+    font-weight: 500;
+    font-size: 18px;
     letter-spacing: 0.02rem;
+    color: #424242;
 }
